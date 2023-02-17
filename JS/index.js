@@ -76,7 +76,6 @@ document.getElementById('btn-first-card').addEventListener('click', function () 
   const titleName = getInnerText('title-first-card');
   const baseValue = getFieldValue('first-input');
   const heightValue = getFieldValue('Second-input');
-
   if (
     baseValue == "" ||
     heightValue == "" ||
@@ -98,6 +97,16 @@ document.getElementById('btn-second-card').addEventListener('click', function ()
   const titleName = getInnerText('title-second-card');
   const widthValue = getFieldValue('first-input-second-card');
   const lengthValue = getFieldValue('Second-input-second-card');
+  if (
+    widthValue == "" ||
+    lengthValue == "" ||
+    widthValue <= 0 ||
+    lengthValue <= 0 ||
+    widthValue != Number ||
+    lengthValue != Number
+  ) {
+    return alert('Please enter any valid number')
+  }
   const area = widthValue * lengthValue;
 
   displayData(titleName, area);
