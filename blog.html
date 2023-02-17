@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <div class="hero min-h-screen bg-base-200">
+            <div>
+                <div class="p-14">
+                    <h1 class="text-5xl font-bold">1. What is DOM and What is the purpose of DOM?</h1>
+                    <p class="py-6">The DOM (Document Object Model) is an interface that represents how your HTML and
+                        XML documents are read by the browser. It allows a language (JavaScript) to manipulate,
+                        structure, and style your website. After the browser reads your HTML document, it creates a
+                        representational tree called the Document Object Model and defines how that tree can be
+                        accessed. <br>
+                        By manipulating the DOM, you have infinite possibilities. You can create applications that
+                        update the data of the page without needing a refresh. Also, you can create applications that
+                        are customizable by the user and then change the layout of the page without a refresh. You can
+                        drag, move, and delete elements.
+                    </p>
+                </div>
+                <div class="px-14">
+                    <h1 class="text-5xl font-bold">2. How will you select HTML elements using DOM? Name the DOM methods?</h1>
+                    <p class="py-6">To select HTML elements using the Document Object Model (DOM), you can use a variety of methods depending on the specific element(s) you want to select. Here are a few common methods: <br>
+
+                        document.getElementById(): This method selects an element with a specified id attribute. For example: document.getElementById("my-element"). <br>
+                        
+                        document.getElementsByClassName(): This method selects all elements with a specified class name. For example: document.getElementsByClassName("my-class"). <br>
+                        
+                        document.getElementsByTagName(): This method selects all elements with a specified tag name. For example: document.getElementsByTagName("p"). <br>
+                        
+                        document.querySelector(): This method selects the first element that matches a specified CSS selector. For example: document.querySelector(".my-class") or document.querySelector("#my-element"). <br>
+                        
+                        document.querySelectorAll(): This method selects all elements that match a specified CSS selector. For example: document.querySelectorAll("p.my-class") or document.querySelectorAll(".my-class, #my-element"). <br>
+                        
+                        Using these methods, you can traverse the DOM and manipulate the selected elements as needed.
+                    </p>
+                </div>
+                <div class="px-14">
+                    <h1 class="text-5xl font-bold">3.What is event bubble</h1>
+                    <p class="py-6">Event bubbling is a mechanism in the Document Object Model (DOM) where an event triggered on a specific element can "bubble up" through its ancestors in the DOM tree, triggering the same event on each ancestor element in turn, all the way up to the document object.
+                    </p>
+                </div>
+                <div class="px-14">
+                    <h1 class="text-5xl font-bold">4.What is a callback function and why will you use it?</h1>
+                    <p class="py-6">In programming, a callback function is a function that is passed as an argument to another function, and is executed by that function at a certain point in time, often after some task has been completed or some event has occurred.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

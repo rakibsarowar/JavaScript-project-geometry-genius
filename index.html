@@ -14,7 +14,7 @@
 
     <header class="lg:px-6">
         <!-- Navbar Start  -->
-        <div class="navbar bg-base-100 bg-green-500 lg:px-12">
+        <div class="navbar bg-base-100 bg-sky-100 lg:px-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0"
+                    <!-- <ul tabindex="0"
                         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Item 1</a></li>
                         <li tabindex="0">
@@ -41,28 +41,12 @@
                             </ul>
                         </li>
                         <li><a>Item 3</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">Interactive <br>Geometry Genius </a>
+                <a class="btn btn-ghost normal-case text-xl mb-3">Interactive <br>Geometry Genius </a>
             </div>
-            <!-- <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li tabindex="0">
-                  <a>
-                    Parent
-                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                  </a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div> -->
             <div class="navbar-end">
-                <a class="btn bg-blue-700">Blog</a>
+                <a href="blog.html" class="btn bg-sky-600 border-none normal-case px-10">Blog</a>
             </div>
         </div>
         <!-- Nav bar End  -->
@@ -75,7 +59,7 @@
 
                 <!-- first card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-8" src="./images/triangle.png" alt="triangle" /></figure>
+                    <figure><img class="mt-10 px-8 w-5/6" src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                         <h2 id="title-first-card" class="text-center font-bold">Triangle</h2>
                         <p class="text-center">Area (A) = 0.5x b x h </p>
@@ -89,7 +73,7 @@
                         </div>
 
                         <div class="card-actions">
-                            <button id="btn-first-card" class="btn bg-sky-600 w-full mt-5">Calculate</button>
+                            <button id="btn-first-card" class="btn bg-sky-600 border-none normal-case w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +94,7 @@
                         </div>
 
                         <div class="card-actions">
-                            <button id="btn-second-card" class="btn bg-sky-600 w-full mt-5">Calculate</button>
+                            <button id="btn-second-card" class="btn bg-sky-600 border-none normal-case w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -123,7 +107,7 @@
                         <p class="text-center">Area (A) = b x h <br> b= <span id="base-innerText-parallelogram">10</span>cm, h=<span id="height-Text-parallelogram">12</span>cm</p>
 
                         <div class="card-actions">
-                            <button id="btn-third-card" class="btn bg-sky-600 w-full mt-5">Calculate</button>
+                            <button id="btn-third-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -135,7 +119,7 @@
                         <h2 id="title-fourth-card" class="text-center font-bold">Rhombus</h2>
                         <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub> <br> d<sub>1</sub>=</sub><span id="base-innerText-rhombus">16</span>cm, d<sub>2</sub>= <span id="height-innerText-rhombus">8</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-fourth-card" class="btn bg-sky-600 w-full">Calculate</button>
+                            <button id="btn-fourth-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +130,7 @@
                         <h2 id="title-fifth-card" class="text-center font-bold">pentagon</h2>
                         <p class="text-center">Area (A) = 0.5 x p x b <br> p= <span id="perimeter-innerText-pentagon">6</span>cm, b=<span id="base-innerText-pentagon">10</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-fifth-card" class="btn bg-sky-600 w-full">Calculate</button>
+                            <button id="btn-fifth-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -158,7 +142,7 @@
                         <p class="text-center">Area (A) = πab <br>
                             a= <span id="axis1-innerText-ellipse">10</span>cm, b=<span id="axis2-innerText-ellipse">4</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-six-card" class="btn bg-sky-600 w-full">Buy Now</button>
+                            <button id="btn-six-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -192,7 +176,7 @@
 
     </main>
     <script src="JS/index.js"></script>
-    <!-- <script src="JS/style.js"></script> -->
+    <script src="JS/style.js"></script>
 </body>
 
 </html>
