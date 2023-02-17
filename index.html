@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="lg:px-6">
+        <!-- Navbar Start  -->
+        <div class="navbar bg-base-100 bg-green-500 lg:px-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Parent
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">Interactive <br>Geometry Genius </a>
+            </div>
+            <!-- <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li tabindex="0">
+                  <a>
+                    Parent
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                  </a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div> -->
+            <div class="navbar-end">
+                <a class="btn bg-blue-700">Blog</a>
+            </div>
+        </div>
+        <!-- Nav bar End  -->
+    </header>
+    <main>
+        
+        <!-- w-[70%] bg-green-500 mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 -->
+        <Section class="lg:px-6 flex flex-col md:flex-row lg:flex-row">
+            <div class="left w-full md:w-[65%] lg:w-[65%] mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-3">
+                <!-- first card  -->
+                <div class="card w-full bg-base-100 border-2">
+                    <figure><img class="mt-10 px-8" src="./images/triangle.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                        <h2 id="title-first-card" class="text-center font-bold">Triangle</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+
+                        <div class="input-field flex">
+                            <input id="first-input" type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <p>cm</p>
+                            <input id="Second-input" type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <p>cm</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <button id="btn-first-card" class="btn bg-sky-600 w-full mt-5">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Card  -->
+                <div class="card w-full bg-base-100 border-2">
+                    <figure><img class="mt-10 px-5" src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center font-bold">Rectangle</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <div class="input-field flex">
+                            <input type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <p>cm</p>
+                            <input type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Card  -->
+                <div class="card w-full bg-base-100 border-2">
+                    <figure><img class="mt-10 px-5" src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center font-bold">Parallelogram</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <div class="card-actions">
+                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth Card  -->
+                <div class="card w-full bg-base-100 border-2">
+                    <figure><img class="mt-10 px-5" src="./images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center font-bold">Parallelogram</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <div class="card-actions">
+                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth Card  -->
+                <div class="card w-full bg-base-100 border-2">
+                    <img class="mt-10 px-5 h-1/5" src="./images/pentagon.png" alt="Shoes" />
+                    <div class="card-body">
+                        <h2 class="text-center font-bold">Parallelogram</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <div class="card-actions">
+                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Six Card  -->
+                <div class="card w-full bg-base-100 border-2">
+                    <img class="mt-10 px-5" src="./images/ellipse.png" alt="Shoes" />
+                    <div class="card-body">
+                        <h2 class="text-center font-bold">Parallelogram</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <div class="card-actions">
+                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+
+            <!-- cart details div  -->
+        <div class="cart-details w-full md:w-[35%] lg:w-[35%] mx-auto">
+            <h1 class="text-2xl text-center font-bold underline mt-5">
+                Area Calculation
+            </h1>
+            <div class="overflow-x-auto">
+              <table class="table w-4/5 mx-5">
+                <thead>
+                  <tr>
+                  </tr>
+                </thead>
+                <tbody id="table-container">
+                  <!-- <tr>
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </Section>
+
+    </main>
+    <script src="JS/index.js"></script>
+    <!-- <script src="JS/style.js"></script> -->
+</body>
+
+</html>
