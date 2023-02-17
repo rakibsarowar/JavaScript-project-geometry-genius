@@ -114,6 +114,30 @@ document.getElementById('btn-fourth-card').addEventListener('click',function(){
     displayData(titleName,area);
 });
 
+//Fifth Card --------------------------------------
+document.getElementById('btn-fifth-card').addEventListener('click',function(){
+    serial +=1;
+    const titleName = getInnerText('title-fifth-card')
+    const perimetterValue = getInnerText('perimeter-innerText-pentagon');
+    const baseValue = getInnerText('base-innerText-pentagon');
+    const area = 0.5* parseInt(perimetterValue)* parseInt(baseValue);
+
+    displayData(titleName,area);
+});
+
+//Six Card --------------------------------------
+document.getElementById('btn-six-card').addEventListener('click',function(){
+    serial +=1;
+    const titleName = getInnerText('title-six-card')
+    const axis1Value = getInnerText('axis1-innerText-ellipse');
+    const axis2Value = getInnerText('axis2-innerText-ellipse');
+    console.log(titleName, axis1Value, axis2Value)
+
+    const area = (Math.PI* parseInt(axis1Value)* parseInt(axis2Value)).toFixed(3);
+
+    displayData(titleName,area);
+});
+
 
 
 // Common functions---------------------------------
@@ -137,7 +161,7 @@ function displayData(nameOfShape, calculation) {
   tr.innerHTML = `
     <td>${serial}</td>
     <td>${nameOfShape}</td>
-    <td>${calculation + 'cm'}</td>
+    <td>${calculation + ' cm'}</td>
     <td>
     <button class="btn btn-sm btn-cyan-700" >Covert to m <sup>2</sup></button>
     </td>
