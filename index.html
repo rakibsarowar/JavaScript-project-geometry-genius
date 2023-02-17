@@ -68,67 +68,74 @@
         <!-- Nav bar End  -->
     </header>
     <main>
-        
+
         <!-- w-[70%] bg-green-500 mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 -->
         <Section class="lg:px-6 flex flex-col md:flex-row lg:flex-row">
             <div class="left w-full md:w-[65%] lg:w-[65%] mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-3">
+
                 <!-- first card  -->
                 <div class="card w-full bg-base-100 border-2">
                     <figure><img class="mt-10 px-8" src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                         <h2 id="title-first-card" class="text-center font-bold">Triangle</h2>
-                        <p class="text-center">Area (A) = 0.5 x b x h </p>
-
+                        <p class="text-center">Area (A) = 0.5x b x h </p>
                         <div class="input-field flex">
-                            <input id="first-input" type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <input id="first-input" type="text" placeholder="b"
+                                class="input input-bordered input-sm w-2/4" />
                             <p>cm</p>
-                            <input id="Second-input" type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <input id="Second-input" type="text" placeholder="h"
+                                class="input input-bordered input-sm w-2/4" />
                             <p>cm</p>
                         </div>
 
                         <div class="card-actions">
-                            <button id="btn-first-card" class="btn bg-sky-600 w-full mt-5">Buy Now</button>
+                            <button id="btn-first-card" class="btn bg-sky-600 w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Second Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-5" src="./images/rectangle.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="text-center font-bold">Rectangle</h2>
-                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                    <figure><img class="mt-10 px-8" src="./images/rectangle.png" alt="triangle" /></figure>
+                    <div class="card-body px">
+                        <h2 id="title-second-card" class="text-center font-bold">Rectangle</h2>
+                        <p class="text-center">Area (A) = W x L </p>
+
                         <div class="input-field flex">
-                            <input type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <input id="first-input-second-card" type="text" placeholder="W"
+                                class="input input-bordered input-sm w-2/4" />
                             <p>cm</p>
-                            <input type="text" placeholder="b" class="input input-bordered input-sm w-2/4" />
+                            <input id="Second-input-second-card" type="text" placeholder="L"
+                                class="input input-bordered input-sm w-2/4" />
                             <p>cm</p>
                         </div>
+
                         <div class="card-actions">
-                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                            <button id="btn-second-card" class="btn bg-sky-600 w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Third Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-5" src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <figure><img class="mt-10 px-8" src="./images/rectangle.png" alt="triangle" /></figure>
                     <div class="card-body">
-                        <h2 class="text-center font-bold">Parallelogram</h2>
-                        <p class="text-center">Area (A) = 0.5 x b x h </p>
-                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <h2 id="title-third-card" class="text-center font-bold">Parallelogram</h2>
+                        <p class="text-center">Area (A) = b x h <br> b= <span id="base-innerText-parallelogram">10</span>cm, h=<span id="height-Text-parallelogram">12</span>cm</p>
+
                         <div class="card-actions">
-                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                            <button id="btn-third-card" class="btn bg-sky-600 w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Fourth Card  -->
                 <div class="card w-full bg-base-100 border-2">
                     <figure><img class="mt-10 px-5" src="./images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="text-center font-bold">Parallelogram</h2>
-                        <p class="text-center">Area (A) = 0.5 x b x h </p>
-                        <p class="text-center">Area (A) = 0.5 x b x h </p>
+                        <h2 id="title-fourth-card" class="text-center font-bold">Rhombus</h2>
+                        <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub> <br> d<sub>1</sub>=</sub><span id="base-innerText-rhombus">16</span>cm, d<sub>2</sub>= <span id="height-innerText-rhombus">8</span>cm</p>
                         <div class="card-actions">
-                            <button class="btn bg-sky-600 w-full">Buy Now</button>
+                            <button id="btn-fourth-card" class="btn bg-sky-600 w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -160,27 +167,28 @@
             <div class="right"></div>
 
             <!-- cart details div  -->
-        <div class="cart-details w-full md:w-[35%] lg:w-[35%] mx-auto">
-            <h1 class="text-2xl text-center font-bold underline mt-5">
-                Area Calculation
-            </h1>
-            <div class="overflow-x-auto">
-              <table class="table w-4/5 mx-5">
-                <thead>
-                  <tr>
-                  </tr>
-                </thead>
-                <tbody id="table-container">
-                  <!-- <tr>
+            <div class="cart-details w-full md:w-[35%] lg:w-[35%] mx-auto">
+                <h1 class="text-2xl text-center font-bold underline mt-5">
+                    Area Calculation
+                </h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-4/5 mx-5">
+                        <thead>
+                            <tr>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- <tr>
                     <th>1</th>
                     <td>Cy Ganderton</td>
                     <td>Quality Control Specialist</td>
                     <td>Blue</td>
                   </tr> -->
-                </tbody>
-              </table>
+                        </tbody>
+                    </table>
+                </div>
+                        
             </div>
-          </div>
         </Section>
 
     </main>
