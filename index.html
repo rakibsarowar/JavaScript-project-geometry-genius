@@ -11,23 +11,26 @@
 </head>
 
 <body>
-
+    <!-- Header Start -->
     <header class="lg:px-6">
         <!-- Navbar Start  -->
         <div class="navbar bg-base-100 bg-sky-100 lg:px-12">
             <div class="navbar-start">
-            <p class="font-bold text-3xl">Interactive <br> <span class="font-light">Geometry Genius</span></p>
+                <p class="font-bold text-3xl">Interactive <br> <span class="font-light">Geometry Genius</span></p>
             </div>
             <div class="navbar-end">
-                <a href="blog.html" class="btn bg-sky-600 border-none normal-case px-10">Blog</a>
+                <a href="blog.html" class="btn bg-sky-600 border-none normal-case px-10" target="_blank">Blog</a>
             </div>
         </div>
         <!-- Nav bar End  -->
     </header>
-    <main>
+    <!-- Header End -->
 
-        <!-- w-[60%] bg-green-500 mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 -->
+    <main>
+        <!-- Section Start -->
         <Section class="lg:px-6 flex flex-col md:flex-row lg:flex-row gap-2 m-5">
+
+            <!-- Left Side div start -->
             <div class="left w-full md:w-[65%] lg:w-[65%] mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-3">
 
                 <!-- first card  -->
@@ -46,12 +49,13 @@
                                 class="input input-bordered input-sm w-2/4 bg-slate-200" />
                             <p class="px-2">cm</p>
                         </div>
-
                         <div class="card-actions">
-                            <button id="btn-first-card" class="btn bg-sky-600 border-none normal-case w-full mt-5">Calculate</button>
+                            <button id="btn-first-card"
+                                class="btn bg-sky-600 border-none normal-case w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Second Card  -->
                 <div class="card w-full bg-base-100 border-2">
                     <div class="h-20 p-5">
@@ -66,12 +70,12 @@
                                 class="input input-bordered input-sm w-2/4 bg-slate-200" />
                             <p class="px-2">cm</p>
                             <input id="Second-input-second-card" type="text" placeholder="L"
-                                class="input input-bordered input-sm w-2/4 bg-slate-200"/>
+                                class="input input-bordered input-sm w-2/4 bg-slate-200" />
                             <p class="px-2">cm</p>
                         </div>
-
                         <div class="card-actions">
-                            <button id="btn-second-card" class="btn bg-sky-600 border-none normal-case w-full mt-5">Calculate</button>
+                            <button id="btn-second-card"
+                                class="btn bg-sky-600 border-none normal-case w-full mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -83,10 +87,12 @@
                     </div>
                     <div class="card-body mt-28">
                         <h2 id="title-third-card" class="text-center font-bold">Parallelogram</h2>
-                        <p class="text-center">Area (A) = b x h <br> b= <span id="base-innerText-parallelogram">10</span>cm, h=<span id="height-Text-parallelogram">12</span>cm</p>
-
+                        <p class="text-center">Area (A) = b x h <br> b= <span
+                                id="base-innerText-parallelogram">10</span>cm, h=<span
+                                id="height-Text-parallelogram">12</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-third-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
+                            <button id="btn-third-card"
+                                class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -98,12 +104,16 @@
                     </div>
                     <div class="card-body mt-28">
                         <h2 id="title-fourth-card" class="text-center font-bold">Rhombus</h2>
-                        <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub> <br> d<sub>1</sub>=</sub><span id="base-innerText-rhombus">16</span>cm, d<sub>2</sub>= <span id="height-innerText-rhombus">8</span>cm</p>
+                        <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub> <br>
+                            d<sub>1</sub>=</sub><span id="base-innerText-rhombus">16</span>cm, d<sub>2</sub>= <span
+                                id="height-innerText-rhombus">8</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-fourth-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
+                            <button id="btn-fourth-card"
+                                class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Fifth Card  -->
                 <div class="card w-full bg-base-100 border-2">
                     <div class="h-20 p-5">
@@ -111,12 +121,16 @@
                     </div>
                     <div class="card-body mt-28">
                         <h2 id="title-fifth-card" class="text-center font-bold">pentagon</h2>
-                        <p class="text-center">Area (A) = 0.5 x p x b <br> p= <span id="perimeter-innerText-pentagon">6</span>cm, b=<span id="base-innerText-pentagon">10</span>cm</p>
+                        <p class="text-center">Area (A) = 0.5 x p x b <br> p= <span
+                                id="perimeter-innerText-pentagon">6</span>cm, b=<span
+                                id="base-innerText-pentagon">10</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-fifth-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
+                            <button id="btn-fifth-card"
+                                class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Six Card  -->
                 <div class="card w-full bg-base-100 border-2">
                     <div class="h-20 p-5">
@@ -125,23 +139,25 @@
                     <div class="card-body mt-28">
                         <h2 id="title-six-card" class="text-center font-bold">Ellipse</h2>
                         <p class="text-center">Area (A) = πab <br>
-                            a= <span id="axis1-innerText-ellipse">10</span>cm, b=<span id="axis2-innerText-ellipse">4</span>cm</p>
+                            a= <span id="axis1-innerText-ellipse">10</span>cm, b=<span
+                                id="axis2-innerText-ellipse">4</span>cm</p>
                         <div class="card-actions">
-                            <button id="btn-six-card" class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
+                            <button id="btn-six-card"
+                                class="btn bg-sky-600 border-none normal-case w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right"></div>
+            <!-- Left Side div End  -->
 
-            <!-- cart details div  -->
+            <!-- Right Side div Start  -->
             <div class="cart-details w-full md:w-[40%] lg:w-[40%]  bg-base-100 border-2 rounded-2xl mx-auto mt-5">
                 <h1 class="text-2xl text-center font-bold underline mt-5">
                     Area Calculation
                 </h1>
-                <!-- overflow-x-auto -->
-                <div class="w-full px-10">
-                    <table class="table w-max mx-5">
+
+                <div class="w-full overflow-x-auto">
+                    <table class="table table-fixed md:ml-12">
                         <thead>
                             <tr>
                             </tr>
@@ -151,11 +167,13 @@
                     </table>
                 </div>
             </div>
+            <!-- Right Side div End  -->
         </Section>
 
     </main>
     <script src="JS/index.js"></script>
     <script src="JS/style.js"></script>
+
 </body>
 
 </html>

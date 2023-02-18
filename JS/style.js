@@ -1,3 +1,4 @@
+// JS Code for random color change effect in hover
 
 const menuBoxes = document.querySelectorAll('.card');
 
@@ -11,4 +12,3 @@ menuBoxes.forEach(function(box) {
     box.style.backgroundColor = 'white';
   });
 });
-s
