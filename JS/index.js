@@ -1,90 +1,21 @@
-// let serial = 0;
-
-// // First Card ---------------------------------
-// document.getElementById('btn-first-card').addEventListener('click',function(){
-//   serial +=1;
-//     const titleName = getInnerText('title-first-card');
-//     const baseValue = getFieldValue('first-input');
-//     const heightValue = getFieldValue('Second-input');
-//     const area = 0.5*baseValue*heightValue;
-
-//     displayData(titleName,area);
-// });
-
-// // // Second Card ---------------------------------
-// document.getElementById('btn-second-card').addEventListener('click',function(){
-//   serial +=1;
-//     const titleName = getInnerText('title-second-card');
-//     const widthValue = getFieldValue('first-input-second-card');
-//     const lengthValue = getFieldValue('Second-input-second-card');
-//     const area = widthValue*lengthValue;
-
-//     displayData(titleName,area);
-// }) 
-
-// // // Third Card --------------------------------------
-// document.getElementById('btn-third-card').addEventListener('click',function(){
-//     serial +=1;
-//     const titleName = getInnerText('title-third-card')
-//     const baseValue = getInnerText('base-innerText-parallelogram');
-//     const heightValue = getInnerText('height-Text-parallelogram');
-
-//     console.log(baseValue, heightValue)
-//     const area = parseInt(baseValue)* parseInt(heightValue);
-
-//     displayData(baseValue,area);
-
-
-// });
-
-// // Common functions---------------------------------
-
-// // function for getting inner text. 
-// function getInnerText(id){
-//     const name = document.getElementById(id).innerText;
-//     return name;
-// }
-
-// // function for getting input field value. 
-// function getFieldValue(id){
-//     const value = document.getElementById(id).value;
-//     return value;
-// } 
-
-// // function for display data.
-// function displayData(nameOfShape, calculation){
-//     const container = document.getElementById('table-container');
-//     const tr = document.createElement('tr');
-//     tr.innerHTML = `
-//     <td>${serial}</td>
-//     <td>${nameOfShape}</td>
-//     <td>${calculation}</td>
-//     <td>
-//     <button class="btn btn-sm btn-cyan-700" >Covert to m <sup>2</sup></button>
-//     </td>
-//     `;
-//     container.appendChild(tr);
-//     // document.getElementById().innerText = serial
-// }
-
-
 let serial = 0;
 
 // First Card ---------------------------------
 document.getElementById('btn-first-card').addEventListener('click', function () {
   serial += 1;
   const titleName = getInnerText('title-first-card');
-  const baseValue = getFieldValue('first-input');
-  const heightValue = getFieldValue('Second-input');
+  const baseValueString = getFieldValue('first-input');
+  const baseValue = parseInt(baseValueString);
+  const heightValueString = getFieldValue('Second-input');
+  const heightValue = parseInt(heightValueString);
+  console.log(typeof baseValue, typeof heightValue)
   if (
-    baseValue == "" ||
-    heightValue == "" ||
+    isNaN(baseValue) ||
+    isNaN(heightValue) ||
     baseValue <= 0 ||
-    heightValue <= 0 ||
-    baseValue != Number ||
-    heightValue != Number
+    heightValue <= 0
   ) {
-    return alert('Please enter any valid number')
+    return alert('Please enter any valid number');
   }
   const area = 0.5 * baseValue * heightValue;
 
@@ -95,19 +26,21 @@ document.getElementById('btn-first-card').addEventListener('click', function () 
 document.getElementById('btn-second-card').addEventListener('click', function () {
   serial += 1;
   const titleName = getInnerText('title-second-card');
-  const widthValue = getFieldValue('first-input-second-card');
-  const lengthValue = getFieldValue('Second-input-second-card');
+  const widthValueString = getFieldValue('first-input-second-card');
+  const widthValue = parseInt(widthValueString);
+  const lengthValueString = getFieldValue('Second-input-second-card');
+  const lengthValue = parseInt(lengthValueString);
+  console.log(lengthValue);
   if (
-    widthValue == "" ||
-    lengthValue == "" ||
+    isNaN(widthValue) ||
+    isNaN(lengthValue) ||
     widthValue <= 0 ||
-    lengthValue <= 0 ||
-    widthValue != Number ||
-    lengthValue != Number
+    lengthValue <= 0
   ) {
-    return alert('Please enter any valid number')
+    return alert('Please enter any valid number');
   }
   const area = widthValue * lengthValue;
+  console.log (area)
 
   displayData(titleName, area);
 });
@@ -153,37 +86,36 @@ document.getElementById('btn-six-card').addEventListener('click', function () {
   const axis2Value = getInnerText('axis2-innerText-ellipse');
   console.log(titleName, axis1Value, axis2Value)
 
-  const area = (Math.PI * parseInt(axis1Value) * parseInt(axis2Value)).toFixed(3);
+  const area = (Math.PI * parseInt(axis1Value) * parseInt(axis2Value)).toFixed(2);
 
   displayData(titleName, area);
 });
 
 
-
 // Common functions---------------------------------
 
-// function for getting inner text. 
+// function for getting inner text------------------
 function getInnerText(id) {
   const name = document.getElementById(id).innerText;
   return name;
 }
 
-// function for getting input field value. 
+// function for getting input field value----------- 
 function getFieldValue(id) {
   const value = document.getElementById(id).value;
   return value;
 }
 
-// function for display data.
+// function for display data------------------------
 function displayData(nameOfShape, calculation) {
   const container = document.getElementById('table-container');
   const tr = document.createElement('tr');
   tr.innerHTML = `
     <td>${serial}</td>
     <td>${nameOfShape}</td>
-    <td>${calculation + ' cm'}</td>
+    <td>${calculation + ' cm<sup>2</sup>'}</td>
     <td>
-    <button class="btn btn-sm btn-cyan-700" >Covert to m <sup>2</sup></button>
+    <button class="btn btn-sm btn-cyan-700 text-xs normal-case px-3" >Covert to m<sup>2</sup></button>
     </td>
   `;
   container.appendChild(tr);
