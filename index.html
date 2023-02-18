@@ -16,34 +16,7 @@
         <!-- Navbar Start  -->
         <div class="navbar bg-base-100 bg-sky-100 lg:px-12">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <!-- <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li tabindex="0">
-                            <a class="justify-between">
-                                Parent
-                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24">
-                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                                </svg>
-                            </a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul> -->
-                </div>
-                <a class="btn btn-ghost normal-case text-xl mb-3">Interactive <br>Geometry Genius </a>
+            <p class="font-bold text-3xl">Interactive <br> <span class="font-light">Geometry Genius</span></p>
             </div>
             <div class="navbar-end">
                 <a href="blog.html" class="btn bg-sky-600 border-none normal-case px-10">Blog</a>
@@ -53,23 +26,25 @@
     </header>
     <main>
 
-        <!-- w-[70%] bg-green-500 mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 -->
-        <Section class="lg:px-6 flex flex-col md:flex-row lg:flex-row">
+        <!-- w-[60%] bg-green-500 mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 -->
+        <Section class="lg:px-6 flex flex-col md:flex-row lg:flex-row gap-2 m-5">
             <div class="left w-full md:w-[65%] lg:w-[65%] mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-3">
 
                 <!-- first card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-8 w-5/6" src="./images/triangle.png" alt="triangle" /></figure>
-                    <div class="card-body">
+                    <div class="h-20 p-5">
+                        <img class="px-5" src="./images/triangle.png" alt="triangle" />
+                    </div>
+                    <div class="card-body mt-28">
                         <h2 id="title-first-card" class="text-center font-bold">Triangle</h2>
                         <p class="text-center">Area (A) = 0.5x b x h </p>
                         <div class="input-field flex">
                             <input id="first-input" type="text" placeholder="b"
-                                class="input input-bordered input-sm w-2/4" />
-                            <p>cm</p>
+                                class="input input-bordered input-sm w-2/4 bg-slate-200" />
+                            <p class="px-2">cm</p>
                             <input id="Second-input" type="text" placeholder="h"
-                                class="input input-bordered input-sm w-2/4" />
-                            <p>cm</p>
+                                class="input input-bordered input-sm w-2/4 bg-slate-200" />
+                            <p class="px-2">cm</p>
                         </div>
 
                         <div class="card-actions">
@@ -79,18 +54,20 @@
                 </div>
                 <!-- Second Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-8" src="./images/rectangle.png" alt="triangle" /></figure>
-                    <div class="card-body px">
+                    <div class="h-20 p-5">
+                        <img class="" src="./images/rectangle.png" alt="triangle" />
+                    </div>
+                    <div class="card-body mt-28">
                         <h2 id="title-second-card" class="text-center font-bold">Rectangle</h2>
                         <p class="text-center">Area (A) = W x L </p>
 
                         <div class="input-field flex">
                             <input id="first-input-second-card" type="text" placeholder="W"
-                                class="input input-bordered input-sm w-2/4" />
-                            <p>cm</p>
+                                class="input input-bordered input-sm w-2/4 bg-slate-200" />
+                            <p class="px-2">cm</p>
                             <input id="Second-input-second-card" type="text" placeholder="L"
-                                class="input input-bordered input-sm w-2/4" />
-                            <p>cm</p>
+                                class="input input-bordered input-sm w-2/4 bg-slate-200"/>
+                            <p class="px-2">cm</p>
                         </div>
 
                         <div class="card-actions">
@@ -101,8 +78,10 @@
 
                 <!-- Third Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-8" src="./images/parallelogram.png" alt="triangle" /></figure>
-                    <div class="card-body">
+                    <div class="h-20 p-5">
+                        <img class="" src="./images/parallelogram.png" alt="triangle" />
+                    </div>
+                    <div class="card-body mt-28">
                         <h2 id="title-third-card" class="text-center font-bold">Parallelogram</h2>
                         <p class="text-center">Area (A) = b x h <br> b= <span id="base-innerText-parallelogram">10</span>cm, h=<span id="height-Text-parallelogram">12</span>cm</p>
 
@@ -114,8 +93,10 @@
 
                 <!-- Fourth Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <figure><img class="mt-10 px-5" src="./images/rhombus.png" alt="Shoes" /></figure>
-                    <div class="card-body">
+                    <div class="h-20 p-5">
+                        <img class="" src="./images/rhombus.png" alt="" />
+                    </div>
+                    <div class="card-body mt-28">
                         <h2 id="title-fourth-card" class="text-center font-bold">Rhombus</h2>
                         <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub> <br> d<sub>1</sub>=</sub><span id="base-innerText-rhombus">16</span>cm, d<sub>2</sub>= <span id="height-innerText-rhombus">8</span>cm</p>
                         <div class="card-actions">
@@ -125,8 +106,10 @@
                 </div>
                 <!-- Fifth Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <img class="mt-10 px-5 h-1/5" src="./images/pentagon.png" alt="Shoes" />
-                    <div class="card-body">
+                    <div class="h-20 p-5">
+                        <img class="px-4" src="./images/pentagon.png" alt="Shoes" />
+                    </div>
+                    <div class="card-body mt-28">
                         <h2 id="title-fifth-card" class="text-center font-bold">pentagon</h2>
                         <p class="text-center">Area (A) = 0.5 x p x b <br> p= <span id="perimeter-innerText-pentagon">6</span>cm, b=<span id="base-innerText-pentagon">10</span>cm</p>
                         <div class="card-actions">
@@ -136,8 +119,10 @@
                 </div>
                 <!-- Six Card  -->
                 <div class="card w-full bg-base-100 border-2">
-                    <img class="mt-10 px-5" src="./images/ellipse.png" alt="Shoes" />
-                    <div class="card-body">
+                    <div class="h-20 p-5">
+                        <img class="" src="./images/ellipse.png" alt="Shoes" />
+                    </div>
+                    <div class="card-body mt-28">
                         <h2 id="title-six-card" class="text-center font-bold">Ellipse</h2>
                         <p class="text-center">Area (A) = πab <br>
                             a= <span id="axis1-innerText-ellipse">10</span>cm, b=<span id="axis2-innerText-ellipse">4</span>cm</p>
@@ -150,27 +135,21 @@
             <div class="right"></div>
 
             <!-- cart details div  -->
-            <div class="cart-details w-full md:w-[35%] lg:w-[35%] mx-auto">
+            <div class="cart-details w-full md:w-[40%] lg:w-[40%]  bg-base-100 border-2 rounded-2xl mx-auto mt-5">
                 <h1 class="text-2xl text-center font-bold underline mt-5">
                     Area Calculation
                 </h1>
-                <div class="overflow-x-auto">
-                    <table class="table w-4/5 mx-5">
+                <!-- overflow-x-auto -->
+                <div class="w-full px-10">
+                    <table class="table w-max mx-5">
                         <thead>
                             <tr>
                             </tr>
                         </thead>
                         <tbody id="table-container">
-                            <!-- <tr>
-                    <th>1</th>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
-                  </tr> -->
                         </tbody>
                     </table>
                 </div>
-                        
             </div>
         </Section>
 
